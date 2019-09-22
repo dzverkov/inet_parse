@@ -65,22 +65,3 @@ def save_to_mongo(p_data):
 
 get_hh_vacancies(service, url, n_pages, vac_lst)
 save_to_mongo(vac_lst)
-
-
-
-
-# result = body.findAll('h2', attrs={'data-marker':'bx-recommendations-block-title'})
-# ads = body.findAll('div', attrs={'data-marker':'bx-recommendations-block-item'})
-# urls = [f'{base_url}{item.find("a").attrs["href"]}' for item in ads]
-#
-# collection = database.avito
-#collection.insert_many(list(map(req_ads, urls)))
-
-# for item in urls:
-#     result = req_ads(item)
-#     collection.insert_one(result)
-
-#time.sleep(random.randint(1, 5))
-
-l=''
-print(l)
